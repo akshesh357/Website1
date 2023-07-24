@@ -1,0 +1,227 @@
+<!Doctype html>
+<html>
+<head><link rel="icon" href="asjaS.jpg" type="image/gif" sizes="16x16"> 
+<title>AM3-Garden Services</title>
+<link href="default.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="custom\jquery-ui-1.12.1.custom\jquery-ui.css">
+
+
+
+  <script src="custom\jquery-ui-1.12.1.custom\external\jquery\jquery.js"></script>
+  <script src="custom\jquery-ui-1.12.1.custom\jquery-ui.js"></script>
+</head>
+<script src="jq.js"></script>
+<script>
+
+$(document).ready(function()
+{
+$("div#greenbox").fadeTo(100,0.3);
+	$("div#greenbox").mouseenter(function()
+	{
+
+       $(this).fadeTo(1000,0.9);
+	}
+
+
+	)
+
+
+$("#footer").hide();
+$("#s2").mouseover(function()
+{
+
+		$(".style1").slideDown("slow");
+$(".style1").css("background-color","#213E4A");
+$(".style1").css("border-radius","10px");
+
+}
+
+);
+$("#rchs").mouseover(function()
+{
+
+		$("#pg2").slideDown("slow");
+$("#pg2").css("background-color","#213E4A");
+$("#pg2").css("border-radius","10px");
+
+}
+
+);	
+$("#logo").mouseenter(function()
+{
+$(this).animate({
+            left: '300px',
+            opacity: '0.9',
+            height: '100px',
+            width: '100px'
+}
+)
+}
+);
+$(".link1").hover(function()
+{
+
+
+        $(this).css('background-color','#355664');
+		$(this).css('color','#f8f8f8');
+		}, function() {
+        $(this).css('background-color', '');
+		$(this).css('color','');
+   
+
+}
+);
+
+$(".f1").mouseenter(function()
+{
+
+$("#footer").slideDown();
+$(".f1").click(
+function()
+{$("#footer").slideUp();
+}
+)
+//alert("juhkjhjhjk");
+}
+);
+
+}
+);
+
+var i=0;
+var m=13;
+
+function imgch(inp)
+{
+
+	var img1=['n1.jpg','n2.jpg','n3.jpg','n4.jpg','n5.jpg','n6.jpg','n7.jpg','s1.jpg','s2.jpg','t1.jpg','t2.jpg','tr1.jpg','tr2.jpg'];
+
+	var len=img1.length;
+	
+	if(i<m)
+	{
+
+		inp.src=img1[i];
+		i++;
+		setTimeout(this, 2000); 
+	}
+	
+	else{
+	i=0;
+	}
+}
+function imz(inp)
+{
+
+var m=inp.src;
+
+	
+document.write('"<img src="'+m+'" width="500px"height="300px">');
+
+}
+</script>
+
+<body>
+	<header><div id="logo">
+		
+			<h1><a href="index.html">
+			<img id="l1"  src="Logo.png" style="border:none">
+			</a></h1>
+		</div>
+		<div id="menu">
+			<ul>
+				<li class="link1"><a href="index.html" class="link1" accesskey="1" title="">Home</a></li>
+				<li class="dropdown" class="link1">
+    <a href="services.html" class="dropbtn">Services</a>
+    <div class="dropdown-content">
+      <a class="link1" href="services.html#gar">Gardening</a>
+      <a class="link1" href="services.html#gut">Gutter Cleaning</a>
+      <a class="link1" href="services.html#mow">Mowing</a>
+      <a class="link1" href="services.html#stri">Strimming</a>
+      <a class="link1" href="services.html#tree">Tree Surgery</a>
+      <a class="link1" href="services.html#tur">Tree Turfing</a>
+      <a class="link1" href="services.html#weed">Weed Kill</a>
+    </div>
+  </li>
+				<li class="link1"><a href="aboutus.html" class="link1" accesskey="3" title="">About Us</a></li>
+				<li class="link1"><a href="join_us.html" class="link1" accesskey="4" title="">Join Us</a></li>
+				<li class="link1"><a href="contactus.html" class="link1" accesskey="5" title="">Contact Us</a></li>
+			</ul>
+		</div>
+	</header>
+	<img   src="ani.gif" style='margin-left:140px;height:80px;margin-top:30px' >
+	<div id="dsa">
+	<div class="line"></div>
+	<br>
+		 <center><img src="treesurgery.jpg"></center>
+		 <div class="line"></div>
+	<section id="articles"> <!-- A new section with the articles -->
+				<!-- Article 1 start -->
+      <article id="article1"> <!-- The new article tag. The id is supplied so it can be scrolled into view. -->
+        <div class="articleBody clear">
+			<h4 style="color:#0080ff">The Clean Cut Gardening team are fully qualified and insured to the highest levels.  Our teams are expertly skilled in every aspect of our work, above all, they are Professional, Dependable, Courteous and Efficient.
+
+We are a well established business covering Peacehaven and surrounding areas, offering expert quality tree surgery services for both Domestic and Commercial clients. The team are used to tricky projects like working around: underground gas and water pipes, electric cabling; swimming pools; greenhouses; or close to walls and fences.
+
+We are committed to maintaining high standards of quality in customer care, presentation and service, we are so confident about the standards of our work that we guarantee all our customers that the work will be carried out to their complete satisfaction.</h4>
+		 
+<div id="greenbox">
+	<table border="1" width="400px" height="150px"style="float:left;background-color:green;">
+	<tr>
+	<td>
+	<h3 style="color:white" >Want to talk to someone? Give us a call at (647) 461-0285, or use our simple online form to request an estimate or book an on-site meeting.</h3>
+	</td>
+	
+	</tr>
+	</table>
+</div>	
+<div id="greenbox">
+
+<table border="1" width="400px" height="150px"style="float:right;background-color:green;text-color:white;" >
+	<tr>
+	<td>
+	<h3 style="color:white">We offer standardized pricing for houses in our service area, and free quotes for condos, retail, and commercial buildings. Either way, we offer the best value in Toronto.</h3>
+	</td>
+	</tr>
+	</table>
+</div>
+	</div>
+<div class="line"></div>  <!-- Dividing line -->
+ 
+ </div>
+                </article>
+                <div class="line"></div>
+     </section> 
+<div id="footer-bg">
+	<div id="footer-content" class="class1">
+    <div id="column2"><h2 style='color:#8B6969'>Locate Us</h2><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2884.5131695603163!2d-79.65028488450073!3d43.699883479119784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b395502b30451%3A0xcb0b9678ac85790a!2s6+Cattrick+St%2C+Mississauga%2C+ON+L4T+1H5!5e0!3m2!1sen!2sca!4v1471526743991" width="280" height="300" frameborder="0" style="border-radius:100px" allowfullscreen></iframe> </div> 
+  
+<div id="column3"><h2 id="s2">Pages</h2><ul class="style1">
+				<li style='border-radius:10px'><a href="privacypolicy.html" style="color:brown" >Privacy Policy</a></li>
+                 <li style='border-radius:10px'><a href="disclaimers.html" style="color:brown" >Disclaimers</a></li>
+			
+			</ul></div>
+		<div id="column1">
+	<h2 id="rchs">Reach Us</h2>
+		
+			<ul class="style1">
+				<li style='border-radius:10px'><a href="http://www.twitter.com" rel="nofollow" target="_blank" style="color:brown">Twitter</a></li>
+				<li style='border-radius:10px'><a href="http://www.fb.com" rel="nofollow" target="_blank" style="color:brown">Facebook</a></li>
+				<li style='border-radius:10px'><a href="https://www.flickr.com" rel="nofollow" target="_blank" style="color:brown">Flickr</a></li>
+				<li style='border-radius:10px'><a href="https://www.google.ca" rel="nofollow" target="_blank" style="color:brown">Google +</a></li>
+							<li style='border-radius:10px'><a href="https://www.pinterest.com/" rel="nofollow" target="_blank" style="color:brown">Pinterest</a></li>
+
+			</ul>
+		</div>
+	</div>
+</div>
+<p class="f1" style="text-align:center;border-radius:10px;background-color:#213E4A;color:#f8f8f8">view copy right</p>
+
+
+<div id="footer" style='border-radius:10px'>
+
+	
+	<p >All Right Reserved&copy; 2016.</p>
+	</div>
+</body>
+</html>

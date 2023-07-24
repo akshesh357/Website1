@@ -1,0 +1,340 @@
+<!Doctype html>
+<html>
+<head><link rel="icon" href="asjaS.jpg" type="image/gif" sizes="16x16"> 
+<title>AM3-Garden Services</title>
+<link href="default.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="custom\jquery-ui-1.12.1.custom\jquery-ui.css">
+
+
+
+  <script src="custom\jquery-ui-1.12.1.custom\external\jquery\jquery.js"></script>
+  <script src="custom\jquery-ui-1.12.1.custom\jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#date" ).datepicker();
+  } );
+  </script>
+<!--<script src="jq.js"></script>-->
+<script>
+
+$(document).ready(function()
+{
+
+$("#footer").hide();
+$("#s2").mouseover(function()
+{
+
+		$(".style1").slideDown("slow");
+$(".style1").css("background-color","#213E4A");
+$(".style1").css("border-radius","10px");
+
+}
+
+);
+$("#rchs").mouseover(function()
+{
+
+		$("#pg2").slideDown("slow");
+$("#pg2").css("background-color","#213E4A");
+$("#pg2").css("border-radius","10px");
+}
+
+);	
+$("#logo").mouseenter(function()
+{
+$(this).animate({
+            left: '300px',
+            opacity: '0.9',
+            height: '100px',
+            width: '100px'
+}
+)
+}
+);
+$(".link1").hover(function()
+{
+
+
+        $(this).css('background-color','#355664');
+		$(this).css('color','#f8f8f8');
+		}, function() {
+        $(this).css('background-color', '');
+		$(this).css('color','');
+
+}
+);
+
+$(".f1").mouseenter(function()
+{
+
+$("#footer").slideDown();
+$(".f1").click(
+function()
+{$("#footer").slideUp();
+}
+)
+//alert("juhkjhjhjk");
+}
+);
+
+}
+);
+
+var i=0;
+var m=13;
+
+function imgch(inp)
+{
+
+	var img1=['n1.jpg','n2.jpg','n3.jpg','n4.jpg','n5.jpg','n6.jpg','n7.jpg','s1.jpg','s2.jpg','t1.jpg','t2.jpg','tr1.jpg','tr2.jpg'];
+
+	var len=img1.length;
+	
+	if(i<m)
+	{
+
+		inp.src=img1[i];
+		i++;
+		setTimeout(this, 2000); 
+	}
+	
+	else{
+	i=0;
+	}
+}
+function imz(inp)
+{
+
+var m=inp.src;
+
+	
+document.write('"<img src="'+m+'" width="500px"height="300px">');
+
+}
+function validation()
+{
+
+var nm=document.myfrm.fname.value;
+var ln=document.myfrm.lname.value;
+var em=document.myfrm.mail.value;
+var ph=document.myfrm.phone.value;
+var ad=document.myfrm.address.value;
+var cv=document.myfrm.message.value;
+var fv=document.getElementById("fv");
+var lv=document.getElementById("lv");
+var ev=document.getElementById("ev");
+var pv=document.getElementById("pv");
+var mv=document.getElementById("cv");
+
+
+if(nm=="")
+{
+
+document.myfrm.fname.placeholder="enter first name !!!";
+
+return false;
+}
+else if(ln==""||ln==null )
+{
+
+
+document.myfrm.lname.placeholder="enter last name !!!";
+return false;
+}
+else if(em==null||em=="")
+{
+document.myfrm.mail.placeholder="enter valid mail address !!!";
+
+return false;
+
+}
+else if(ad=="")
+{
+document.myfrm.address.placeholder="enter address";
+return false;
+}
+else if(ph.length!=10)
+{
+document.myfrm.phone.placeholder="enter phone number 10 digit!!!";
+
+return false;
+}
+else if(cv=="")
+{
+document.myfrm.message.placeholder="enter message please !!!";
+return false;
+}
+else
+{
+return true;
+}
+
+
+
+}
+
+
+
+</script>
+
+</style>
+</head>
+<body>
+
+<header>
+	<header><div id="logo">
+		<h1><a href="index.html">
+			<img id="l1"  src="Logo.png" style="border:none">
+			</a></h1>
+		</div>
+	<div id="menu">
+			<ul>
+				<li class="link1"><a href="index.html" accesskey="1" class="link1" title="" >Home</a></li>
+				<li class="dropdown" class="link1">
+    <a href="services.html" class="dropbtn">Services</a>
+    <div class="dropdown-content">
+      <a class="link1" href="services.html#gar">Gardening</a>
+      <a class="link1" href="services.html#gut">Gutter Cleaning</a>
+      <a class="link1" href="services.html#mow">Mowing</a>
+      <a class="link1" href="services.html#stri">Strimming</a>
+      <a class="link1" href="services.html#tree">Tree Surgery</a>
+      <a class="link1" href="services.html#tur">Tree Turfing</a>
+      <a class="link1" href="services.html#weed">Weed Kill</a>
+    </div>
+  </li>
+				<li class="link1"><a href="aboutus.html" accesskey="3" class="link1" title="">About Us</a></li>
+				<li class="link1"><a href="join_us.html" accesskey="4" class="link1" title="">Join Us</a></li>
+				<li class="link1"><a href="contactus.html" accesskey="5" class="link1" title="">Contact Us</a></li>
+			</ul>
+		</div>
+	</header>
+	<img   src="ani.gif" style='margin-left:140px;height:80px;margin-top:30px' >
+<div id="dsa">
+
+	<div class="line"></div>
+	<br>
+		 <img src="join_us.jpg"   width="1120" height="400" alt="" /> </div>
+<div class="line"></div>
+	<section id="articles"> <!-- A new section with the articles -->
+				<!-- Article 1 start -->
+      <article id="article1"> <!-- The new article tag. The id is supplied so it can be scrolled into view. -->
+        <div class="articleBody clear">
+                    
+ <center>
+<h2 style='color:#f3fd04'> Please Fill This Form...Thank You!!</h2>
+<div class="line"></div>  <!-- Dividing line -->
+<form onsubmit="return validation()" action="index.html" name="myfrm" >
+<table width="600px">
+<tr><td valign="top">
+<label style="color:#0080ff">First Name:</label></td><td valign="top"><input type="text" style='color:#6495ed'  name="fname"></label><br><br></td>
+<td><p id="fv" style="color:red"></p></td>
+ 
+</tr>
+<tr><td valign="top"><label style="color:#0080ff">Surname:</td><td valign="top"><input type="text" style='color:#6495ed' name="lname"></label><br><br></td>
+ <td><p id="lv" style="color:red"></p></td>
+ 
+</tr>
+<tr><td valign="top"><label style="color:#0080ff">email:</td><td valign="top"><input type="email" style='color:#6495ed' name="mail" placeholder="eg.@gmail.com" ></label><br><br></td>
+<td><p id="ev" style="color:red"></p></td> 
+</tr>
+
+<tr><td valign="top"><label style="color:#0080ff">Gender</label>:</td><td valign="top">
+<label style="color:#0080ff"><input type="radio" name="gender" checked="checked">Male
+<input type="radio" name="gender" >Female</label><br></td><td valign="top"><br><br></td></tr>
+
+<tr><td valign="top"><label style="color:#0080ff">Date of Birth :</td><td valign="top">
+<input type="text"  style='color:#6495ed' id="date" name='date'></p>
+
+</select><br><br><br></td><tr><td valign="top">
+<label style="color:#0080ff"> department interested &nbsp;&nbsp;:</label></td><td valign="top">
+<select name="department" style='color:#6495ed'>
+<option selected style="color:#0080ff">Turfing</option>
+<option style="color:#0080ff">Cleaning</option>
+<option style="color:#0080ff">Barked</option>
+<option style="color:#0080ff">Gutter Clearance</option>
+<option style="color:#0080ff">Strimming</option>
+<option style="color:#0080ff">Gutter Clearance</option>
+<option style="color:#0080ff">Tree surgery</option>
+</select>
+<br><br>
+
+
+</td></tr>
+<br>
+<tr><td valign="top">
+<label style="color:#0080ff">Address:&nbsp;&nbsp;&nbsp;&nbsp;</label><br><br></td><td valign="top">
+<textarea rows="5" columns="7" style='color:#6495ed' name="address"></textarea><br></td>
+<td><p id="av" style="color:red"></p></td>
+ 
+</tr>
+<tr><td valign="top">
+<label style="color:#0080ff">Phone Number:&nbsp;&nbsp;&nbsp;&nbsp;</td><td valign="top"> <input style='color:#6495ed' type="number" name="phone" placeholder="+1"></label><br><br></td>
+<td><p id="pv" style="color:red"></p></td>
+ 
+</tr>
+
+<tr><td valign="top"><label style="color:#0080ff">Necessary Equipment: </td><td valign="top">
+<label style="color:#0080ff"><input type="checkbox" value="safety jacket" name="course" checked="checked">safty jacket</label><br>
+<label style="color:#0080ff"><input type="checkbox" value="safety shoes" name="course">safety shoes</label><br>
+<label style="color:#0080ff"><input type="checkbox" value="safety glubs" name="course">safety glubs</label><br>
+<label style="color:#0080ff"><input type="checkbox" value="safety helmet" name="course">safety helmet</label><br>
+<label style="color:#0080ff"><input type="checkbox" value="safety glasses" name="course">safety glasses</label><br>
+</td></tr>
+<tr><td valign="top">
+<label style="color:#0080ff">Comments And Questions:&nbsp;&nbsp;&nbsp;&nbsp;</label><br><br></td><td valign="top">
+<textarea style='color:#6495ed' rows="5" columns="7" name="message"></textarea><br></td>
+<td><p id="cv" style="color:red"></p></td>
+
+</tr>
+<tr>
+
+</fieldset ><td valign="top"><br><br></td>
+<td><input style='color:#f3fd04;background-color:#6495ed' type="Submit"></input>
+<input style='color:#f3fd04;background-color:#6495ed' type="Reset"></td></tr>
+
+
+ 
+
+
+</table></form></center>
+ <div class="line"></div>  <!-- Dividing line -->
+ 
+ </div>
+                </article>
+                <div class="line"></div>
+     </section> 
+	 
+	 
+<div id="footer-bg">
+	<div id="footer-content" class="class1">
+    <div id="column2"><h2 style='color:#8B6969'>Locate Us</h2><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2884.5131695603163!2d-79.65028488450073!3d43.699883479119784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b395502b30451%3A0xcb0b9678ac85790a!2s6+Cattrick+St%2C+Mississauga%2C+ON+L4T+1H5!5e0!3m2!1sen!2sca!4v1471526743991" width="280" height="300" frameborder="0" style="border-radius:100px" allowfullscreen></iframe> </div> 
+  
+<div id="column3"><h2 id="s2">Pages</h2><ul class="style1">
+				<li style='border-radius:10px'><a href="privacypolicy.html" style="color:brown" >Privacy Policy</a></li>
+                 <li style='border-radius:10px'><a href="disclaimers.html" style="color:brown" >Disclaimers</a></li>
+			
+			</ul></div>
+		<div id="column1">
+	<h2 id="rchs">Reach Us</h2>
+		
+			<ul class="style1">
+				<li style='border-radius:10px'><a href="http://www.twitter.com" rel="nofollow" target="_blank" style="color:brown">Twitter</a></li>
+				<li style='border-radius:10px'><a href="http://www.fb.com" rel="nofollow" target="_blank" style="color:brown">Facebook</a></li>
+				<li style='border-radius:10px'><a href="https://www.flickr.com" rel="nofollow" target="_blank" style="color:brown">Flickr</a></li>
+				<li style='border-radius:10px'><a href="https://www.google.ca" rel="nofollow" target="_blank" style="color:brown">Google +</a></li>
+							<li style='border-radius:10px'><a href="https://www.pinterest.com/" rel="nofollow" target="_blank" style="color:brown">Pinterest</a></li>
+
+			</ul>
+		</div>
+	</div>
+</div>
+<p class="f1" style="text-align:center;border-radius:10px;background-color:#213E4A;color:#f8f8f8">view copy right</p>
+
+
+<div id="footer" style='border-radius:10px'>
+
+	
+	<p >All Right Reserved&copy; 2016.</p>
+	</div>
+</body>
+</html>

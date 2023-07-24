@@ -1,0 +1,427 @@
+<!D<!Doctype html>
+<html>
+<head><link rel="icon" href="asjaS.jpg" type="image/gif" sizes="16x16"> 
+<title>AM3-Garden Services</title>
+<link href="default.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="custom\jquery-ui-1.12.1.custom\jquery-ui.css">
+
+
+
+  <script src="custom\jquery-ui-1.12.1.custom\external\jquery\jquery.js"></script>
+  <script src="custom\jquery-ui-1.12.1.custom\jquery-ui.js"></script>
+<style>
+.s2{
+text-shadow:10px 12px 3px #8B6969; 
+
+}
+
+</style>
+</head>
+<script src="jq.js"></script>
+<script>
+var i=0;
+var m=13;
+	var n=function mn()
+	{
+	
+       $(this).css("color","#8B6969");//here u can pass 'this' mean refer to that element 
+	   //	   $(this).animate({ 'zoom': 1.2 }, 400);
+	   //$(this).css(transform: scale())
+	   $(this).css("transform","scale(1.5)");
+	   
+	}
+	var m=function mn1()
+	{
+	
+	 $(this).css("transform","scale(1.0)");
+	 $(this).css("color","#f8f8f8");
+	}
+$(document).ready(function()
+{
+$(".dsa").fadeIn(1500);
+
+
+$(".ids").mouseenter( function()
+					{
+				
+					$(this).fadeTo(1000,1);// it will take 2 arg 1st is duration and 2nd work will have to do after duration 
+					}
+			
+				);
+$(".ids").mouseout(function()
+				{
+						
+						$(this).fadeTo(1000,1,mm1);// here second arg is variable name
+				}
+				
+				);
+$(".ids").click(function()
+				{
+						$(this).animate({width:400,height:400},1000);
+						
+				}
+				
+				);				
+$("p#p1").fadeTo(100,0.5);
+	$("p#p1").mouseover(
+			function()
+			{
+				$(this).fadeTo(1000,0.9,n);
+			
+			}
+
+		)
+		$("p#p1").mouseout(
+		function()
+		{
+		$(this).fadeTo(1000,0.9,m);
+		}
+		
+		);
+
+$("#footer").hide();
+$("#s2").mouseover(function()
+{
+
+		$(".style1").slideDown("slow");
+$(".style1").css("background-color","#213E4A");
+$(".style1").css("border-radius","10px");
+
+}
+
+);
+$("#rchs").mouseover(function()
+{
+
+		$("#pg2").slideDown("slow");
+$("#pg2").css("background-color","#213E4A");
+$("#pg2").css("border-radius","10px");
+
+}
+
+);	
+$("#logo").mouseenter(function()
+{
+$(this).animate({
+            left: '300px',
+            opacity: '0.9',
+            height: '100px',
+            width: '100px'
+}
+)
+}
+);
+$(".link1").hover(function()
+{
+
+
+         $(this).css('background-color','#355664');
+		$(this).css('color','#f8f8f8');
+		}, function() {
+        $(this).css('background-color', '');
+		$(this).css('color','');
+   
+
+}
+);
+
+$(".f1").mouseenter(function()
+{
+
+$("#footer").slideDown();
+$(".f1").click(
+function()
+{$("#footer").slideUp();
+}
+)
+
+}
+);
+
+}
+);
+
+
+function imgch(inp)
+{
+
+	var img1=['n1.jpg','n2.jpg','n3.jpg','n4.jpg','n5.jpg','n6.jpg','n7.jpg','s1.jpg','s2.jpg','t1.jpg','t2.jpg','tr1.jpg','tr2.jpg'];
+
+	var len=img1.length;
+	if(i<m)
+	{
+		inp.src=img1[i];
+		i++;
+		setTimeout(this, 2000); 
+	}
+	
+	else{
+	i=0;
+	}
+}
+function imz(inp)
+{
+
+var m=inp.src;
+
+
+document.write('"<img src="'+m+'" width="500px"height="300px">');
+
+}
+
+
+</script>
+<body>
+	<header><div id="logo">
+		
+			<h1><a href="index.html">
+			<img id="l1"  src="Logo.png" style="border:none">
+			</a></h1>
+		</div>
+		<div id="menu">
+			<ul>
+				<li class="link1"><a href="index.html" class="link1" accesskey="1" title="">Home</a></li>
+				<li class="dropdown" class="link1">
+    <a href="services.html" class="dropbtn">Services</a>
+    <div class="dropdown-content">
+      <a class="link1" href="services.html#gar">Gardening</a>
+      <a class="link1" href="services.html#gut">Gutter Cleaning</a>
+      <a class="link1" href="services.html#mow">Mowing</a>
+      <a class="link1" href="services.html#stri">Strimming</a>
+      <a class="link1" href="services.html#tree">Tree Surgery</a>
+      <a class="link1" href="services.html#tur">Tree Turfing</a>
+      <a class="link1" href="services.html#weed">Weed Kill</a>
+    </div>
+  </li>
+				<li class="link1"><a href="aboutus.html" class="link1" accesskey="3" title="">About Us</a></li>
+				<li class="link1"><a href="join_us.html" class="link1" accesskey="4" title="">Join Us</a></li>
+				<li class="link1"><a href="contactus.html" class="link1" accesskey="5" title="">Contact Us</a></li>
+			</ul>
+		</div>
+	</header>
+	<img   src="ani.gif" style='margin-left:140px;height:80px;margin-top:30px' >
+	<div id="dsa">
+
+	
+	<div class="line"></div>
+	<br>
+	<img src="services1.jpg" width="1120" height="400" alt="" /></div>
+<body>
+<div class="line"></div>
+	<section id="articles"> <!-- A new section with the articles -->
+				<!-- Article 1 start -->
+      <article id="article1"> <!-- The new article tag. The id is supplied so it can be scrolled into view. -->
+        <div class="articleBody clear">
+<center>
+<div class="d2">
+<h2 > <a name="gar" style='color:#f3fd04' href="gardening.html">Gardening</a></h2>
+<div class="line"></div>
+<img class="ids"  src="g1.jpg" width="200" height="200" alt="barked" onclick="imgch(this);">
+
+<br>
+<br>
+<br>
+
+  <p id="p1" align="justify" style="color:#0080ff">
+  Clean Cut Gardening offer a versatile range of decorative limestone shingle has a range of applications including driveway and general landscaping, drainage and pipe bedding. A blend of neutral beiges and cream/Cotswold colours mean that this product blends into a wide range of settings. Perfect for smaller and larger garden areas.
+   
+    We offer Decorative Shingle graded to 20mm for hard landscaping, 40mm for land drainage, 10mm for pipe bedding and 6mm pea shingle for reed beds. All shingles are suitable for driveways, footpaths and general landscaping.
+    
+    Bark chips, of various grades are produced from the outer corky bark  layer of timber trees. Sizes vary from thin shredded strands to large coarse blocks.
+    
+    The finer types are very attractive but have a large exposed surface area that leads to quicker decay. Layers two or three inches deep are usually used, bark is relativity inert and its decay does not demand soil nitrates. We provide a range of mulchs of varying composition and texture for you to choose from.
+  </p>
+
+<br>
+
+</div>
+</center>
+<div class="line"></div>  <!-- Dividing line -->
+ 
+ </div>
+                </article>
+                <div class="line"></div>
+<article id="article1"> <!-- The new article tag. The id is supplied so it can be scrolled into view. -->
+        <div class="articleBody clear">
+		<center>
+<div class="d2">
+<h2 ><a name="gut" style='color:#f3fd04' href="guttercleaning.html"> GUTTER CLEARANCE </a></h2>
+<div class="line"></div>
+<img class="ids" src="gu1.jpg" width="200" height="200" onclick="imgch(this);">
+<br>
+<br>
+<br>
+  <p id="p1" align="justify" style="color:#0080ff">Clean Cut Gardening specialise in Green Waste Clearance. There’s nothing we love more than getting down and dirty and doing the jobs you hate!!
+  
+  We know that many of you like to still look after your gardens yourself, well that’s no problem! We can still remove green waste that you have created and dispose of it in an environmentally friendly way at a registered green waste site.
+  
+  Our team are professionally trained,  hard-working, trustworthy, thorough and quietly efficient. We are also friendly and helpful. Rudeness to customers in not tolerated and we have strict discipline procedures  in place. On the same level we do not tolerate rudeness to any of our staff from clients and have the same strict policies and procedures in place. We have respect for you and your property.
+  
+  You do not need to be present at any clearance. If you cannot attend, we can pick keys up at a suitable place and we can work with your neighbour, solicitor or estate agent. We do ask for a detailed breif on what exactly you want us to clear or leave so there is no confusion.</p>
+<br>
+
+
+</div></center>
+<div class="line"></div>  <!-- Dividing line -->
+ 
+ </div>
+                </article>
+                <div class="line"></div>
+<article id="article1"> <!-- The new article tag. The id is supplied so it can be scrolled into view. -->
+        <div class="articleBody clear">
+<center>
+<div class="d2" name="mow" >
+<h2 > <a name="mow" style='color:#f3fd04' href="mowing.html">MOWING</a> </h2>
+<div class="line"></div>
+<img class="ids" src="m1.jpg" width="200" height="200" alt="strimming" onclick="imgch(this);">
+<br>
+<br>
+<br>
+
+
+<p style="color:#0080ff" id="p1" align="justify">Clean Cut Gardening offer a very high standard grass mowing service.
+
+Lawn mowing and grass cutting services for commercial and domestic customers, we cut lawns and grass areas for domestic gardens large and small, estates, communal areas such as blocks of flats and housing associations, industrial estates, hotels, and schools.
+
+Lawn mowing and grass cutting services are available on a weekly, fortnightly or an ad-hoc basis, ensuring your grass area is always healthy and looking great.
+
+Our lawn maintenance service includes mowing, feeding aeration and over seeding as required, to ensure your lawn is maintained to a very high standard and in peak condition.
+
+All or lawn mowing and maintenance services, whether contractual or ad hoc, include the removal and green disposal of all clippings leaving your garden neat and tidy.
+<br>
+</p>
+</div>
+</center>
+<div class="line"></div>  <!-- Dividing line -->
+ 
+ </div>
+                </article>
+                <div class="line"></div>
+<article id="article1"> <!-- The new article tag. The id is supplied so it can be scrolled into view. -->
+        <div class="articleBody clear"><center>
+<div class="d2" name="stri">
+<h2 ><a name="stri" style='color:#f3fd04' href="strimming.html" class="lnk">STRIMMING</a></h2>
+<div class="line"></div>
+<img class="ids" src="s2.jpg" width="200" height="200" alt="strimming" onclick="imgch(this);"><br>
+<br>
+<br>
+<br>
+
+<p style="color:#0080ff" id="p1" align="justify">Clean Cut Gardening Service is a successful gardening business based in Peacehaven. We pride ourselves on our reliability, friendly approach and most importantly, our knowledge of the industry. We have many years of experience working for numerous commercial and domestic clients.
+
+We know that customer satisfaction is key to business, so we ensure the highest standards of work at a highly competitive and reasonable rate. Whether you need a stripy lawn, lawn cutting, hedge cutting, leaf clearance, or patio and driveway clearing, we can give you a competitive quote. Our lawn technicians are fully trained and insured to operate the best equipment for residential and commercial work. Clean . Our Garden Operators have experience in all types of Hedges and the different sizes of the jobs undertaken vary tremendously.
+
+The reason for calling Clean Cut Gardening Services also vary, maybe your hedge has grown too far onto the pavement, or is obscuring your windows, doors and views, or maybe the job has just become to much for you to cope with. We always clear up afterwards, even sweeping pavements and driveways as needed and we dispose of the hedge cuttings in an environmental and responsible way. Sometimes the weeds have taken over, the lawn is patchy where the children have been on their garden swing, or the builders might have finished their work. Whatever the reason – if enough is enough or you need a new lawn give us a call today. Whether you decide you need the whole lawn re-turfed or just parts of it, Clean Cut Gardening Service can advise on the best course of action for all Garden maintenance projects.</p>
+
+</div></center>
+<br><br>
+<div class="line"></div>  <!-- Dividing line -->
+ 
+ </div>
+                </article>
+                <div class="line"></div>
+<article id="article1"> <!-- The new article tag. The id is supplied so it can be scrolled into view. -->
+        <div class="articleBody clear"><center>
+<div class="d2">
+<h2><a name="tur" style='color:#f3fd04' href="treeturfing.html">TREE TURFING </a></h2>
+<div class="line"></div>
+<img class="ids" src="s1.jpg" width="200" height="200" alt="treesurgery" onclick="imgch(this);">
+<br>
+<br>
+<br>
+
+<p id="p1" style="color:#0080ff" align="justify">The Clean Cut Gardening team are fully qualified and insured to the highest levels.  Our teams are expertly skilled in every aspect of our work, above all, they are Professional, Dependable, Courteous and Efficient.
+We are a well established business covering Peacehaven and surrounding areas, offering expert quality tree surgery services for both Domestic and Commercial clients. The team are used to tricky projects like working around: underground gas and water pipes, electric cabling; swimming pools; greenhouses; or close to walls and fences. We are committed to maintaining high standards of quality in customer care, presentation and service, we are so confident about the standards of our work that we guarantee all our customers that the work will be carried out to their complete satisfaction.
+
+We take our health and safety, and environmental responsibilities very seriously and have detailed policies and operational guidelines in place at all times. 
+<br>
+</p>
+</div></center>
+<div class="line"></div>  <!-- Dividing line -->
+ 
+ </div>
+                </article>
+                <div class="line"></div>
+<article id="article1"> <!-- The new article tag. The id is supplied so it can be scrolled into view. -->
+        <div class="articleBody clear"><center>
+<div class="d2">
+<h2 ><a name="tree" style='color:#f3fd04' href="treesurgery.html">TREE SURGERY</a> </h2>
+<div class="line"></div>
+<img class="ids" src="tr1.jpg" width="200" height="200" alt="Turfing" onclick="imgch(this);">
+<br>
+<br>
+<br>
+<p id="p1" style="color:#0080ff" align="justify">Clean Cut Gardening phenomenal  turfing experience  in turfing gardens.  We have laid hundreds of lawns throughout Sussex so we have the expertise to provide you with the highest quality finished lawn.
+
+Turfing can be described as an art form and requires great skill to produce a high quality product from seed, to the ready to lay turf and Clean Cut Gardening have mastered that skill to produce the best there is.
+
+We specialise in all areas of Garden maintenance , supplying a quality service from concept/design through to completion combining experience acquired over many years.
+
+We have done work for many large companies, but also welcome domestic enquiries, whether you’re thinking of having someturfing work done to your home or relaying some new turf – give us a call today to find out how we can help you.
+
+We provide a service that is a cut above the rest. Our skilled team are fully equipped and trained to carry out grounds maintenance, turf laying, planting and construction work to an exceptionally high standard.
+</p>
+</div></center>
+<div class="line"></div>  <!-- Dividing line -->
+ 
+ </div>
+                </article>
+                <div class="line"></div>
+<article id="article1"> <!-- The new article tag. The id is supplied so it can be scrolled into view. -->
+        <div class="articleBody clear"><center>
+<div class="d2">
+<h2  ><a name="weed" style='color:#f3fd04' href="weedkill.html"> WEED KILL DRIVES/PATIOS </a></h2>
+<div class="line"></div>
+<img  class="ids" src="w1.jpg" width="200" height="200" alt="Weed kill drives" onclick="imgch(this);" >
+<br>
+<br>
+<br>
+<p style="color:#0080ff" id="p1" align="justify">Clean Cut Gardening provide weed control services in Peacehaven and surrounding areas.
+
+Weeds, moss and slippery surfaces are a significant health and safety concern in both domestic and commercial areas. Clean Cut Gardening offer effective treatment of these sites to control and remove weeds and moss, keeping areas free of trip or slip hazards and generally bringing the appearance of your property up to high standards.
+
+Left to grow weeds also interfere with infrastructure, create fire risks, de-grade stock and create security issues by obscuring views. Clean Cut Gardening  can offer regular programmed visits to help prevent the recurrence of the problem in areas such as car parks, industrial sites, hospitals, nursing homes, site clearance,  play areas, passageways, driveways, patios, and decking.
+We provide a service that is a cut above the rest. Our skilled team are fully equipped and trained to carry out grounds maintenance, turf laying, planting and construction work to an exceptionally high standard.
+</p>
+
+</div>
+</center>
+<div class="line"></div>  <!-- Dividing line -->
+ 
+ </div>
+                </article>
+                <div class="line"></div>
+ </section> 
+<div id="footer-bg">
+	<div id="footer-content" class="class1">
+    <div id="column2"><h2 style='color:#8B6969'>Locate Us</h2><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2884.5131695603163!2d-79.65028488450073!3d43.699883479119784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b395502b30451%3A0xcb0b9678ac85790a!2s6+Cattrick+St%2C+Mississauga%2C+ON+L4T+1H5!5e0!3m2!1sen!2sca!4v1471526743991" width="280" height="300" frameborder="0" style="border-radius:100px" allowfullscreen></iframe> </div> 
+  
+<div id="column3"><h2 id="s2">Pages</h2><ul class="style1">
+				<li style='border-radius:10px'><a href="privacypolicy.html" style="color:brown" >Privacy Policy</a></li>
+                 <li style='border-radius:10px'><a href="disclaimers.html" style="color:brown" >Disclaimers</a></li>
+			
+			</ul></div>
+		<div id="column1">
+	<h2 id="rchs">Reach Us</h2>
+		
+			<ul class="style1">
+				<li style='border-radius:10px'><a href="http://www.twitter.com" rel="nofollow" target="_blank" style="color:brown">Twitter</a></li>
+				<li style='border-radius:10px'><a href="http://www.fb.com" rel="nofollow" target="_blank" style="color:brown">Facebook</a></li>
+				<li style='border-radius:10px'><a href="https://www.flickr.com" rel="nofollow" target="_blank" style="color:brown">Flickr</a></li>
+				<li style='border-radius:10px'><a href="https://www.google.ca" rel="nofollow" target="_blank" style="color:brown">Google +</a></li>
+							<li style='border-radius:10px'><a href="https://www.pinterest.com/" rel="nofollow" target="_blank" style="color:brown">Pinterest</a></li>
+
+			</ul>
+		</div>
+	</div>
+</div>
+<p class="f1" style="text-align:center;border-radius:10px;background-color:#213E4A;color:#f8f8f8">view copy right</p>
+
+
+<div id="footer" style='border-radius:10px'>
+
+	
+	<p >All Right Reserved&copy; 2016.</p>
+	</div>
+</body>
+</html>
